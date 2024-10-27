@@ -15,14 +15,14 @@ body {
   font-size: 1.6rem;
   line-height: 1.5;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
-  background-color: rgb(194, 41, 27);
+  background-color: rgb(247, 214, 79);
   min-height: 100vh;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  background: url("./img/luffy-straw-hat-bg.jpg");
+  background: url("./img/simpsons-bg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -52,12 +52,11 @@ img {
 
 .header {
   text-align: center;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
 }
 
-.header h1 {
-  font-size: 3.5rem;
-  font-weight: 600;
+.header img {
+  width: 150px;
 }
 
 .quote-section .quote-content {
@@ -80,7 +79,7 @@ img {
 
 .quote-content .person {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 
   font-style: italic;
@@ -141,8 +140,8 @@ img {
   outline: none;
   padding: 15px 30px;
   font-size: 1.6rem;
-  background-color: rgb(194, 41, 27);
-  color: #fff;
+  background-color: rgb(247, 214, 79);
+  color: #000;
   border-radius: 25px;
   cursor: pointer;
   transition: 0.5s;
@@ -166,10 +165,6 @@ img {
 }
 
 @media screen and (max-width: 650px) {
-  .header h1 {
-    font-size: 2.5rem;
-  }
-
   .quote-content .quote p {
     font-size: 1.6rem;
   }
@@ -211,6 +206,10 @@ img {
     padding: 0 20px;
   }
 
+  .header img {
+    width: 100px;
+  }
+
   .feature-btns ul {
     gap: 15px;
   }
@@ -219,10 +218,6 @@ img {
 @media screen and (max-width: 400px) {
   .quote-container {
     padding: 25px 15px;
-  }
-
-  .header h1 {
-    font-size: 2rem;
   }
 
   .quote-content .quote p {

@@ -4,7 +4,10 @@ const person = document.getElementById("person");
 const newQuoteBtn = document.getElementById("new-quote");
 
 newQuoteBtn.addEventListener("click", () => {
-  fetch("https://animechan.io/api/v1/quotes/random")
+  fetch("https://thesimpsonsquoteapi.glitch.me/quotes")
     .then((response) => response.json())
-    .then((quote) => console.log(quote));
+    .then((data) => {
+      console.log(data);
+    })
+    .catch((error) => console.log(`${error}`));
 });
