@@ -4,6 +4,7 @@ const person = document.getElementById("person");
 const newQuoteBtn = document.getElementById("new-quote");
 const speechBtn = document.getElementById("speech");
 const copyBtn = document.getElementById("copy");
+const twitterBtn = document.getElementById("twitter");
 
 newQuoteBtn.addEventListener("click", () => {
   // Found an API that doesnt give me any CORS issues 😃
@@ -50,4 +51,13 @@ copyBtn.addEventListener("click", () => {
         console.error("Failed to copy");
       }
     );
+});
+
+twitterBtn.addEventListener("click", () => {
+  // use the url and pre populate the tweet with the quote and person
+  window.open(
+    `https://twitter.com/intent/tweet?text=${quote.textContent} --- By ${person.textContent}`,
+    "Tweet Window",
+    "width=600, height=300"
+  );
 });
