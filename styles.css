@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Base Styles */
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  background-color: rgb(194, 41, 27);
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: url("./img/luffy-straw-hat-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ----- Quote Generator Styles ----- */
+.quote-container {
+  max-width: 700px;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 35px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.header h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.quote-section .quote-content {
+  margin-bottom: 35px;
+}
+
+.quote-content .quote {
+  margin-bottom: 30px;
+}
+
+.quote-content .quote p {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.quote-content .quote p::before,
+.quote-content .quote p::after {
+  content: '"';
+}
+
+.quote-content .person {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-style: italic;
+}
+
+.quote-content .person i {
+  margin-right: 5px;
+  font-size: 1.8rem;
+}
+
+.quote-content .person i:first-child {
+  margin-right: -2.3px;
+}
+
+.quote-section .buttons {
+  border-top: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.buttons .feature-btns {
+  margin-top: 25px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feature-btns ul {
+  display: flex;
+  gap: 20px;
+}
+
+.feature-btns ul li {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid black;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.feature-btns ul li:hover {
+  background-color: #000;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.feature-btns ul li i {
+  font-size: 2.2rem;
+}
+
+.feature-btns .new-btn button {
+  border: none;
+  outline: none;
+  padding: 15px 30px;
+  font-size: 1.6rem;
+  background-color: rgb(194, 41, 27);
+  color: #fff;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.feature-btns .new-btn button:hover {
+  transform: scale(1.06);
+}
