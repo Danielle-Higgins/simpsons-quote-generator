@@ -151,3 +151,103 @@ img {
 .feature-btns .new-btn button:hover {
   transform: scale(1.06);
 }
+
+/* Media Queries */
+@media screen and (max-width: 850px) {
+  body {
+    padding: 0 50px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .quote-container {
+    padding: 25px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .header h1 {
+    font-size: 2.5rem;
+  }
+
+  .quote-content .quote p {
+    font-size: 1.6rem;
+  }
+
+  .quote-content .person {
+    font-size: 1.4rem;
+  }
+
+  .quote-content .person i {
+    font-size: 1.6rem;
+  }
+
+  .feature-btns ul li {
+    width: 40px;
+    height: 40px;
+  }
+
+  .feature-btns ul li i {
+    font-size: 1.9rem;
+  }
+
+  .feature-btns .new-btn button {
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 545px) {
+  .quote-content .quote p {
+    font-size: 1.4rem;
+  }
+
+  .quote-content .person {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body {
+    padding: 0 20px;
+  }
+
+  .feature-btns ul {
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .quote-container {
+    padding: 25px 15px;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .quote-content .quote p {
+    font-size: 1.2rem;
+  }
+
+  .quote-content .person {
+    font-size: 1rem;
+  }
+
+  .feature-btns ul {
+    gap: 10px;
+  }
+
+  .feature-btns ul li {
+    width: 35px;
+    height: 35px;
+  }
+
+  .feature-btns ul li i {
+    font-size: 1.6rem;
+  }
+
+  .feature-btns .new-btn button {
+    padding: 8px 15px;
+    font-size: 1.4rem;
+  }
+}
